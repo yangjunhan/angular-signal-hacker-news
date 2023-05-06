@@ -1,0 +1,35 @@
+:host {
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    height: 60px;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(200, 50, 50);
+    font-size: 1.125rem;
+    list-style: none;
+    margin: 0;
+
+    li {
+      margin: 0 16px;
+
+      &.logo {
+        width: 48px;
+        height: 48px;
+        background: url("../../../assets/img/logo.png") no-repeat center/cover;
+        cursor: pointer;
+        margin-left: 0;
+      }
+
+      .menu-item {
+        text-decoration: none;
+        color: white;
+
+        &.active {
+          text-decoration: underline;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}

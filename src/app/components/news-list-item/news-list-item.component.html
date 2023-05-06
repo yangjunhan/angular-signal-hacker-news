@@ -1,0 +1,15 @@
+<p>
+  <span>{{ index }}. </span>
+  <span class="link" (click)="openLink()">{{ item.title }} </span>
+  <small *ngIf="item.url">({{ item.url | domain }})</small>
+</p>
+<p>
+  <small>
+    {{ item.score }} points by
+    <!-- TODO: user page-->
+    {{ item.by }}
+    | {{ item.time | readableTime }} |
+    <!-- TODO: comments page-->
+    {{ item.kids?.length || 0 }} comments
+  </small>
+</p>

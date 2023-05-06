@@ -1,0 +1,11 @@
+<div class="loading-spinner" *ngIf="loading()"></div>
+<ng-container *ngIf="!loading()">
+  <div class="pagination">
+    <div id="back-icon" class="nav-btn" (click)="prevPage()"></div>
+    <small>{{ pageNum() }}/{{ totalPage() }}</small>
+    <div id="next-icon" class="nav-btn" (click)="nextPage()"></div>
+  </div>
+  <div class="item-container" *ngFor="let item of newsItemsDisplayed(); trackBy: trackByNewsItemId; let i = index">
+    <app-news-list-item [index]="i + 1" [item]="item" />
+  </div>
+</ng-container>

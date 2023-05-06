@@ -1,7 +1,11 @@
-# AngularSignalHackerNews
+# Angular Signal Hacker News
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+This project is developed using Angular **v16** framework and [Angular Signal concept](https://angular.io/guide/signals).
 
+![img.png](./src/assets/img/screenshot.png)
+
+Hacker News API url e.g. "https://hacker-news.firebaseio.com/v0/item/2921983.json?print=pretty".
+For more information about HackerNews API, please visit [here](https://github.com/HackerNews/API).
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

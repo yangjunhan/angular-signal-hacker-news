@@ -9,7 +9,8 @@
         "@schematics/angular:component": {
           "style": "less",
           "skipTests": true,
-          "standalone": true
+          "standalone": true,
+          "changeDetection": "OnPush"
         },
         "@schematics/angular:class": {
           "skipTests": true
@@ -122,8 +123,22 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
